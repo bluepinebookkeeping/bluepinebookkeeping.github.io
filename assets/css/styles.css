@@ -90,3 +90,17 @@ h1 {
   font-family: 'Alike';
 }
 
+.navbar-brand svg {
+  color: var(--bs-green);
+  font-size: 2em;
+}
+
+.navbar-brand {
+  padding: 10px;
+  font-size: 2em;
+  font-family: 'PT Sans';
+  text-transform: uppercase;
+  color: rgb(180,127,86)!important;
+  text-shadow: 1px 1px rgb(25,135,84), -1px -1px rgb(25,135,84), 1px -1px rgb(25,135,84), -1px 1px rgb(25,135,84), 1px 0px rgb(25,135,84);
+}
+
