@@ -63,7 +63,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
   }
   
   .hero-section h1 {
@@ -327,7 +326,6 @@ body {
 
     footer ul {
     list-style: none;
-    padding: 0; 
     }
     
     .footer-section a {
@@ -344,7 +342,7 @@ body {
     background-image: url("/assets/img/evergreen_trees_2d_sm.jpg");
     background-repeat: repeat-x;
     background-position: bottom right;
-    transition: all 4s ease-in-out;
+    transition: all 8s ease-in-out;
     
     }
 
