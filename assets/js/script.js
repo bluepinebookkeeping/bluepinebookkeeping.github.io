@@ -39,7 +39,7 @@ $(document).ready(function () {
           hours = 100;
           hoursInput.val(100);
         }else{
-        $('#pricing-estimate').text(`Based on your usual monthly bookkeeping time of ${hours} hours, Stephen's services would cost approximately $${estimatedCost} per month (30% faster than industry average).`);
+        $('#pricing-estimate').text(`Based on your usual monthly bookkeeping time of ${hours} hours every month, Stephen can complete the job in about ${estimatedHours.toFixed(1)} hours, and it will cost approximately $${estimatedCost} per month (30% faster than industry average).`);
         totalOutput.text("$" + estimatedCost)}
       } else {
         hours = 0;
