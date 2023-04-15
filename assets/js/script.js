@@ -18,18 +18,32 @@ $(document).ready(function () {
   });
 
   // Pricing calculator
-  $('#pricing-calc-btn').on('click', function () {
-    var hours = $('#hours').val();
+  $(document).ready(function () {
+    // define rate and speed factor
     var rate = 75;
     var timeSavingsFactor = 0.7;
-    var estimatedHours = Math.round(hours * timeSavingsFactor);
-    var estimatedCost = estimatedHours * rate;
 
-    if (hours > 0) {
-      $('#pricing-estimate').text(`Based on your estimated monthly bookkeeping hours of ${hours}, our services would cost approximately $${estimatedCost} per month (30% faster than industry average).`);
-    } else {
-      $('#pricing-estimate').text(`Please enter a valid number of hours.`);
+    // get values from input fields
+    const hoursInput = $('#hours');
+    const totalOutput = $('#total');
+
+    // Calculate estimated mothly cost
+    function calculateCost() {
+      const hours = hoursInput.val();
+      const estimatedHours = hours * timeSavingsFactor;
+      const estimatedCost = (estimatedHours * rate).toFixed(2);
+      
+      if (hours > 0) {
+        $('#pricing-estimate').text(`Based on your usual monthly bookkeeping time of ${hours} hours, Stephen's services would cost approximately $${estimatedCost} per month (30% faster than industry average).`);
+        totalOutput.text("$" + estimatedCost)
+      } else {
+        $('#pricing-estimate').text(`Please enter a valid number of hours.`);
+      }
     }
+
+    // update cost on input
+    hoursInput.on('input', calculateCost);
+
   });
   
   // Scroll reveal animations
