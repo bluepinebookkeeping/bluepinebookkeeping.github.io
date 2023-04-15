@@ -30,15 +30,22 @@ $(document).ready(function () {
 
     // Calculate estimated mothly cost
     function calculateCost() {
-      const hours = hoursInput.val();
+      var hours = hoursInput.val();
       const estimatedHours = hours * timeSavingsFactor;
       const estimatedCost = (estimatedHours * rate).toFixed(2);
       
       if (hours > 0) {
+        if (hours > 100) {
+          hours = 100;
+          hoursInput.val(100);
+        }else{
         $('#pricing-estimate').text(`Based on your usual monthly bookkeeping time of ${hours} hours, Stephen's services would cost approximately $${estimatedCost} per month (30% faster than industry average).`);
-        totalOutput.text("$" + estimatedCost)
+        totalOutput.text("$" + estimatedCost)}
       } else {
-        $('#pricing-estimate').text(`Please enter a valid number of hours.`);
+        hours = 0;
+        hoursInput.val(0);
+        totalOutput.text("$0");
+        $('#pricing-estimate').text(`Type a number in the box above or click the arrows within the box to estimate your monthly bookkeeping cost.`);
       }
     }
 
