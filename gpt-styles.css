@@ -130,8 +130,17 @@ body {
   .service-item a {
     color: white
   }
-  /* About section styles */
-
+  /* About section styles 
+  
+  .about-section {
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  */
   .about-section {
     background-color: #f8f9fa;
     text-align: center;
@@ -141,34 +150,46 @@ body {
   }
   
   #about {
-    padding: 100px 0 0 0;
+    padding: 100px 0;
   }
   
   #about-expandable {
-    padding: 0 0 50px 0;
+    padding: 50px 0;
     visibility: inherit;
   }
   
   .about-section h2 {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
+    text-align: left;
   }
   
   .about-section img {
-    border-radius: 50%;
-    height: auto;
+    border-radius: 10%;
+    height: 150px;
     max-width: 100%;
-    margin-bottom: 20px;
+    float: left;
+    padding: 8px;
   }
   
   .about-section p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 28px;
     color: #4d4d4d;
     margin-bottom: 50px;
     max-width: 700px;
     margin: 0 auto 50px auto;
+    text-align: justify;
   }
-
+  
+  .about-section p:first-of-type {
+    margin-bottom: 0;
+  }
+  
+  .about-section p:last-of-type {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
   .about-section .accordion-button {
     background-color: #507ea6;
     color: #fff;
@@ -182,10 +203,6 @@ body {
     padding: 50px 0;
     text-align: center;
     position: relative;
-  }
-  
-  .about-section-short {
-    display: block;
   }
   
   /* About section styles 
@@ -321,3 +338,39 @@ body {
     .footer-links a:hover {
     color: #a8bfcc;
     }
+
+    #calculator {
+    background-color: #fff;
+    background-image: url("/assets/img/evergreen_trees_2d_sm.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    transition: all 4s ease-in-out;
+    
+    }
+
+    #calculator small {
+    font-size: 0.7 rem;
+  }
+  
+  #calculator img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+  }
+
+  #about-expandable {
+    display: none;
+  }
+
+#expand-button{
+  display:none;
+}
+
+.testimonials-section {
+  display: none;
+}
+
+.contact-section {
+  display: none;
+}

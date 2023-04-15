@@ -26,6 +26,7 @@ $(document).ready(function () {
     // get values from input fields
     const hoursInput = $('#hours');
     const totalOutput = $('#total');
+    const calculator = $('#calculator');
 
     // Calculate estimated mothly cost
     function calculateCost() {
@@ -41,8 +42,18 @@ $(document).ready(function () {
       }
     }
 
+    // set new background position
+    function scrollBackground() {
+      const hours = hoursInput.val();
+      const newBackgroundPosition = hours * 10;
+      calculator.css('background-position', `bottom 0 right ${newBackgroundPosition}px`);
+    }
+
     // update cost on input
     hoursInput.on('input', calculateCost);
+
+    // scroll background on hours input
+    hoursInput.on('input', scrollBackground);
 
   });
   
