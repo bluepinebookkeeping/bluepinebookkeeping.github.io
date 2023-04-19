@@ -328,7 +328,8 @@ footer ul {
   background-image: url("/assets/img/evergreen_trees_2d_sm.jpg");
   background-repeat: repeat-x;
   background-position: bottom right;
-  transition: auto, all 8s ease-in-out;
+  transition: all 8s ease-in-out;
+  margin-bottom: 2rem!important;
 }
 
 #calculator small {

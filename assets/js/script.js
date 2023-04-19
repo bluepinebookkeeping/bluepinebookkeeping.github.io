@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
-    }, 100);
+    }, 200);
   });
 
   // Toggle about section
@@ -99,7 +99,7 @@ $(document).ready(function () {
   // Scroll reveal animations
   ScrollReveal().reveal('.section-title', {
     delay: 200,
-    duration: 1000,
+    duration: 800,
     reset: true,
     distance: '50px'
   });
