@@ -37,7 +37,7 @@ $(document).ready(function () {
         data: JSON.stringify(formData),
         success: function(response) {
           console.log(response);
-          alert(`Thank you for reaching out, ${formData['name']}! I just sent a copy of it to you and to Stephen. He will get back to you soon!`);
+          alert(`Thank you for your message, ${formData['name']}! A copy has been sent to you and to Stephen. He will be in touch soon.`);
           $('#contact-form').trigger('reset');
         },
         error: function(error) {
