@@ -16,12 +16,44 @@ $(document).ready(function () {
       return text === "Show Less" ? "Learn More" : "Show Less";
     })
   });
+  });
+
+  // handle form submission
+  $(document).ready(function () {
+    $('#contact-form').on('submit', function (e) {
+      e.preventDefault();
+
+      // get form data
+      var formData = {
+        'name': $('#name').val(),
+        'email': $('#email').val(),
+        'message': $('#message').val()
+      };
+
+      // send form data to google cloud function at https://functions-hello-world-3bcmi7543q-uc.a.run.app/
+      $.ajax({
+        url: 'https://bpb-handle-contact-form-3bcmi7543q-uw.a.run.app',
+        type: 'POST',
+        data: JSON.stringify(formData),
+        success: function(response) {
+          console.log(response);
+          alert(`Thank you for reaching out, ${formData['name']}! I just sent a copy of it to you and to Stephen. He will get back to you soon!`);
+          $('#contact-form').trigger('reset');
+        },
+        error: function(error) {
+          alert('There was an error sending your message. Please try again or contact me directly at stephen@bluepinebookeeping.com.');
+          console.log(error);
+        }
+      });
+    });
+
 
   // Pricing calculator
   $(document).ready(function () {
     // define rate and speed factor
-    var rate = 75;
+    var initialRate = 75;
     var timeSavingsFactor = 0.7;
+    var rateIncrease = 0.05 / 52;
 
     // get values from input fields
     const hoursInput = $('#hours');
@@ -32,7 +64,7 @@ $(document).ready(function () {
     function calculateCost() {
       var hours = hoursInput.val();
       const estimatedHours = hours * timeSavingsFactor;
-      const estimatedCost = (estimatedHours * rate).toFixed(2);
+      const estimatedCost = (estimatedHours * initialRate).toFixed(2);
       
       if (hours > 0) {
         if (hours > 100) {
