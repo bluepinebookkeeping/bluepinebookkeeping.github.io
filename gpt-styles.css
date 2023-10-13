@@ -322,27 +322,6 @@ footer ul {
   color: #a8bfcc;
 }
 
-/* Calculator styles */
-#calculator {
-  background-color: #fff;
-  background-image: url("/assets/img/evergreen_trees_2d_sm.jpg");
-  background-repeat: repeat-x;
-  background-position: bottom right;
-  transition: all 8s ease-in-out;
-  margin-bottom: 2rem!important;
-}
-
-#calculator small {
-  font-size: 0.7 rem;
-}
-
-#calculator img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0;
-}
-
 #about-expandable {
   display: none;
 }
