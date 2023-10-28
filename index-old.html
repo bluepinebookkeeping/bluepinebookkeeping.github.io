@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Pine Bookkeeping</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="gpt-styles.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blue Pine Bookkeeping</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Blue Pine Bookkeeping</h1>
+            <p>Professional bookkeeping services for small businesses.</p>
+            <a href="#contact" class="button" id="get-started-button">Get Started</a>
+        </div>
+    </section>
+
+    <div id="main-content-area">
+
+        <!-- Services section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="row">
+                    <h2>My Services</h2>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-file-alt fa-3x mb-3"></i>
+                            <h3>Bookkeeping</h3>
+                            <p>Keeping your books up to date and accurate, so you can focus on growing your business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-handshake fa-3x mb-3"></i>
+                            <h3>Client and Vendor Relations</h3>
+                            <p>Managing relationships with your clients and vendors, to help you build lasting
+                                partnerships.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-file-invoice fa-3x mb-3"></i>
+                            <h3>Full-Service Payroll</h3>
+                            <p>Managing payroll for your employees, including direct deposits, tax filings, and year-end
+                                reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-chart-bar fa-3x mb-3"></i>
+                            <h3>Financial Reporting and Budgeting</h3>
+                            <p>Preparing monthly, quarterly, and yearly financial reports and budgets, to help you make
+                                informed business decisions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-file-invoice-dollar fa-3x mb-3"></i>
+                            <h3>Sales Tax Filing</h3>
+                            <p>Filing sales tax reports, to help you comply with local regulations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="fas fa-boxes fa-3x mb-3"></i>
+                            <h3>Inventory Management and Procurement</h3>
+                            <p>Tracking inventory levels, monitoring reorder points, and managing the procurement
+                                process,
+                                to help you keep your business running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2>Contact Blue Pine Bookkeeping</h2>
+
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary" id="send-button">Send Message</button>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Short About section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="row" id="about-container">
+                    <h2>About Blue Pine Bookkeeping</h2>
+                    <div class="col-md-8 mx-auto" id="initial-about">
+                        <div>
+                            <img src="assets/img/st_profile_1.jpg" alt="Stephen Pierce">
+                            <p>
+                                My name is Stephen, and I created Blue Pine 
+                                Bookkeeping to help other small businesses with 
+                                their financial needs. I have over 10 years of 
+                                experience in the industry, and my goal is to 
+                                make your bookkeeping as stress-free for you as 
+                                possible!
+                            </p>
+                        </div>
+                        <div>
+                            <button class="accordion-button" id="expand-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#about-expandable" aria-expanded="false"
+                                aria-controls="about-expandable">Experience
+                                and Skills</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+
+    <!-- Expandable About section -->
+    <section class="about-section collapse" id="about-expandable">
+        <div class="col-md-8 mx-auto">
+            <h3>Experience and Skills</h3>
+            <p>Prior to starting Blue Pine Bookkeeping, I worked in a variety of industries, including construction,
+                manufacturing, and retail. This experience has given me a broad perspective on the challenges facing
+                small businesses and has helped me develop the skills necessary to provide effective bookkeeping
+                solutions.</p>
+            <p>I'm a certified QuickBooks ProAdvisor and have extensive experience working with QuickBooks Online and
+                Desktop, as well as other accounting software. I'm also proficient in Design Manager and Studio
+                Designer, two popular software programs used in the interior design industry.</p>
+            <p>If you have any questions or would like to learn more about my services, please don't hesitate to contact
+                me. I look forward to hearing from you!</p>
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Stephen has been our bookkeeper for the past three years, and we couldn't be happier
+                                with his services. He's professional, reliable, and always willing to go above and
+                                beyond to help us with our financial needs. I highly recommend him to any small business
+                                looking for a top-notch bookkeeper."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/img/stefan-stefancik-QXevDflbl8A-unsplash.jpg" alt="Testimonial author">
+                            <h4>Jane Doe</h4>
+                            <p>Owner, Doe's Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Stephen is an excellent bookkeeper and a pleasure to work with. He's very organized and
+                                always keeps us up-to-date on our financials. He's also very responsive and easy to get
+                                a hold of when we have questions or concerns. I highly recommend him."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/img/philip-martin-5aGUyCW_PJw-unsplash.jpg" alt="Testimonial author">
+                            <h4>John Smith</h4>
+                            <p>Owner, Smith Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Stephen has been a lifesaver for our business. We were struggling to keep up with our
+                                financials and were falling behind on our taxes. Stephen came in and got us back on
+                                track, and we haven't looked back since. He's a true professional, and we highly
+                                recommend him."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/img/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg" alt="Testimonial author">
+                            <h4>Susan Johnson</h4>
+                            <p>Owner, Johnson Retail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4 id="email-contact">Blue Pine Bookkeeping</h4>
+                    <!-- 
+                    <p>123 Main St.</p>
+                    <p>Portland, OR 97205</p>
+                    <p><a href="tel:123-456-7890">123-456-7890</a></p>
+                    -->
+                    <p><a href="mailto:stephen@bluepinebookkeeping.com">stephen@bluepinebookkeeping.com</a></p>
+                </div>
+                <div class="col-12">
+                    <h4><a href="#services">Services</a></h4>
+                </div>
+                <div class="col-md-12">
+                    <h5>Social</h5>
+                    <ul class="social-media-list">
+                        <li><a href="https://www.instagram.com/bluepinebookkeeping/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Blue Pine Bookkeeping. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ScrollReveal library -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <!-- External JavaScript file -->
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
